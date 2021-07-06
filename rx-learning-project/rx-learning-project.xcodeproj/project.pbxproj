@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5B88990C2694B44E00218599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88990B2694B44E00218599 /* AppDelegate.swift */; };
-		5B88990E2694B44E00218599 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88990D2694B44E00218599 /* SceneDelegate.swift */; };
 		5B8899102694B44E00218599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88990F2694B44E00218599 /* ViewController.swift */; };
 		5B8899132694B44E00218599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8899112694B44E00218599 /* Main.storyboard */; };
 		5B8899152694B44F00218599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8899142694B44F00218599 /* Assets.xcassets */; };
 		5B8899182694B44F00218599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8899162694B44F00218599 /* LaunchScreen.storyboard */; };
 		5B8899232694B44F00218599 /* rx_learning_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8899222694B44F00218599 /* rx_learning_projectTests.swift */; };
 		5B88992E2694B44F00218599 /* rx_learning_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88992D2694B44F00218599 /* rx_learning_projectUITests.swift */; };
+		5B88993D2694B90600218599 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B88993C2694B90600218599 /* RxSwift */; };
+		5B88993F2694B90600218599 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 5B88993E2694B90600218599 /* RxTest */; };
+		5B8899412694B90600218599 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8899402694B90600218599 /* RxRelay */; };
+		5B8899432694B90600218599 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8899422694B90600218599 /* RxCocoa */; };
+		5B8899452694B90600218599 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8899442694B90600218599 /* RxBlocking */; };
+		5B88994E2694C05700218599 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88994D2694C05700218599 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		5B8899082694B44E00218599 /* rx-learning-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-learning-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B88990B2694B44E00218599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B88990D2694B44E00218599 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B88990F2694B44E00218599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B8899122694B44E00218599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B8899142694B44F00218599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		5B8899292694B44F00218599 /* rx-learning-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rx-learning-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B88992D2694B44F00218599 /* rx_learning_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rx_learning_projectUITests.swift; sourceTree = "<group>"; };
 		5B88992F2694B44F00218599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B88994D2694C05700218599 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8899432694B90600218599 /* RxCocoa in Frameworks */,
+				5B8899412694B90600218599 /* RxRelay in Frameworks */,
+				5B88993D2694B90600218599 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B88993F2694B90600218599 /* RxTest in Frameworks */,
+				5B8899452694B90600218599 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +109,8 @@
 		5B88990A2694B44E00218599 /* rx-learning-project */ = {
 			isa = PBXGroup;
 			children = (
-				5B88990B2694B44E00218599 /* AppDelegate.swift */,
-				5B88990D2694B44E00218599 /* SceneDelegate.swift */,
-				5B88990F2694B44E00218599 /* ViewController.swift */,
-				5B8899112694B44E00218599 /* Main.storyboard */,
-				5B8899142694B44F00218599 /* Assets.xcassets */,
-				5B8899162694B44F00218599 /* LaunchScreen.storyboard */,
-				5B8899192694B44F00218599 /* Info.plist */,
+				5B8899472694BA2000218599 /* Ressources */,
+				5B8899462694BA1800218599 /* Sources */,
 			);
 			path = "rx-learning-project";
 			sourceTree = "<group>";
@@ -128,6 +133,59 @@
 			path = "rx-learning-projectUITests";
 			sourceTree = "<group>";
 		};
+		5B8899462694BA1800218599 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5B88994D2694C05700218599 /* SceneDelegate.swift */,
+				5B88990B2694B44E00218599 /* AppDelegate.swift */,
+				5B8899482694BA2F00218599 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5B8899472694BA2000218599 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				5B88994C2694BAB500218599 /* Views */,
+				5B8899142694B44F00218599 /* Assets.xcassets */,
+				5B8899192694B44F00218599 /* Info.plist */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		5B8899482694BA2F00218599 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B88994B2694BA5700218599 /* Helpers */,
+				5B88994A2694BA4C00218599 /* Main */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B88994A2694BA4C00218599 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5B88990F2694B44E00218599 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5B88994B2694BA5700218599 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5B88994C2694BAB500218599 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B8899162694B44F00218599 /* LaunchScreen.storyboard */,
+				5B8899112694B44E00218599 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +202,11 @@
 			dependencies = (
 			);
 			name = "rx-learning-project";
+			packageProductDependencies = (
+				5B88993C2694B90600218599 /* RxSwift */,
+				5B8899402694B90600218599 /* RxRelay */,
+				5B8899422694B90600218599 /* RxCocoa */,
+			);
 			productName = "rx-learning-project";
 			productReference = 5B8899082694B44E00218599 /* rx-learning-project.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +225,10 @@
 				5B8899202694B44F00218599 /* PBXTargetDependency */,
 			);
 			name = "rx-learning-projectTests";
+			packageProductDependencies = (
+				5B88993E2694B90600218599 /* RxTest */,
+				5B8899442694B90600218599 /* RxBlocking */,
+			);
 			productName = "rx-learning-projectTests";
 			productReference = 5B88991E2694B44F00218599 /* rx-learning-projectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 5B8898FF2694B44E00218599;
+			packageReferences = (
+				5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 5B8899092694B44E00218599 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +330,7 @@
 			files = (
 				5B8899102694B44E00218599 /* ViewController.swift in Sources */,
 				5B88990C2694B44E00218599 /* AppDelegate.swift in Sources */,
-				5B88990E2694B44E00218599 /* SceneDelegate.swift in Sources */,
+				5B88994E2694C05700218599 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +507,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 568UZNMWK9;
-				INFOPLIST_FILE = "rx-learning-project/Info.plist";
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "rx-learning-project/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "haydari.lauriane.com.rx-learning-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -456,12 +530,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 568UZNMWK9;
-				INFOPLIST_FILE = "rx-learning-project/Info.plist";
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "rx-learning-project/Ressources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "haydari.lauriane.com.rx-learning-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -593,6 +671,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B88993C2694B90600218599 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		5B88993E2694B90600218599 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		5B8899402694B90600218599 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		5B8899422694B90600218599 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		5B8899442694B90600218599 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B88993B2694B90600218599 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B8899002694B44E00218599 /* Project object */;
 }
